@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+    <form>
+        <label for="data">Data:</label>
+        <input type="text" id="data" name="data" required>
+        <button type="button" id="generate">Generate QR Code</button>
+    </form>
+    <div id="qrcode"></div>
+    <a id="downloadLink" style="display: none" download="qrcode.png">Download QR Code</a>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
